@@ -32,6 +32,16 @@ Postaraj się aby Twój kod był maksymalnie czytelny, wydajny oraz zgodny ze st
 
 # Rozwiązanie:
 
+-  Na początku definiujemy funkcję `getItemsMaxNumber`, która przyjmuje jako argument tablicę `items`.
+- Definiujemy zmienną `maxNumber` i ustawiamy ją na `0`. Ta zmienna będzie przechowywać największą znalezioną liczbę.
+- W pętli `for` iterujemy po każdym elemencie tablicy `items`. Każdy element jest przypisywany do zmiennej `item`.
+- Dla każdego elementu item wykorzystujemy metodę `match()` na polu `name`, aby znaleźć wszystkie wystąpienia liczb w ciągu. Metoda ta zwraca tablicę z dopasowaniami lub `null`, jeśli nie ma dopasowań.
+- Sprawdzamy, czy `matches` istnieje i jest różny od `null`, wykorzystując konstrukcję warunkową `if`. Jeśli tak, to wykonujemy kolejną pętlę `for` dla każdego dopasowania w `matches`.
+- Dla każdego dopasowania match wykorzystujemy metodę `parseInt()` do przekształcenia ciągu znaków na liczbę całkowitą i przypisujemy ją do zmiennej `number`.
+- Porównujemy `number` z dotychczas największą liczbą `maxNumber` i jeśli jest większa, to przypisujemy ją do `maxNumber`.
+- Po wykonaniu pętli zewnętrznej zwracamy `maxNumber` jako wynik funkcji.
+
+
 ```
 function getItemsMaxNumber(items) {
     let maxNumber = 0;
