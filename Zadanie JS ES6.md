@@ -29,9 +29,6 @@ Przykładowe użycie funkcji:
 
 Postaraj się aby Twój kod był maksymalnie czytelny, wydajny oraz zgodny ze standardami es6+.
 
-Rozwiązanie zadania wyślij na adres e-mail jcudzich@asco.com.pl, a tytuł maila utwórz według następującego schematu:
-
-``` `React Developer: ${imie} ${nazwisko}, ${miesiac} ${rok}`" ```
 
 # Rozwiązanie:
 
